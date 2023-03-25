@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог. Барбершоп "Бородинский"</title>
+    <link rel="icon" href="../assets/ico/fav-ico.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <nav class="navigation">
+            <a class="navigation-logo" href="#">
+                <img class="navigation-image" src="#" alt="Логотип барбершопа">
+            </a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">О нас</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link navigation-link-current" href="#">Каталог</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Частые вопросы</a>
+                </li>
+            </ul>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">Корзина</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">Вход</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-inner">
+        <header class="inner-header">
+            <h1 class="inner-header-title">Каталог</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="../index.html" >Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#" >Каталог</a>
+                </li>
+            </ul>
+        </header>
+
+        <section class="catalog-products">
+            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="products-filters-group">
+                    <legend class="products-filters-title">Цена</legend>
+                    <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                    <label>
+                        от <input class="price-range-input" type="number" name="min-price">
+                    </label>
+                    <label>
+                        до <input class="price-range-input" type="number" name="max-price">
+                    </label>
+                </fieldset>
+
+                <fieldset class="products-filters-group">
+                    <legend class="products-filters-title">Производители</legend>
+                    <ul class="products-filter-list">
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Bed Head for Men</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">Homme Deep Cleansing Cool</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="so-intense" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">So Intense</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Sprekenhus</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="firm-store">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Firm Storе</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="winter-body">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Winter Body</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="products-filters-group">
+                    <legend class="products-filters-title">Группы товаров</legend>
+                    <ul class="products-filter-list">
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="radio" name="shaving-supplies">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Бритвенные принадлежности</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="radio" name="care-products" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">Средства для ухода</span>
+                            </label>
+                        </li>
+                        <li class="products-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="radio" name="accessories">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Аксессуары</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button class="button" type="submit">Показать</button>
+            </form>
+
+            <form class="sorting-type">
+                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="select-control" name="sorting" id="sorting">
+                    <option value="popular">Сначала популярные</option>
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                </select>
+                <button class="visually-hidden" type="submit">Отсортировать</button>
+            </form>
+            <a class="button button-light" href="#">
+                <span class="visually-hidden">Показать список</span>
+            </a>
+            <a class="button" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <ul class="product-list">
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+                    </a>
+                    <b class="product-card-price">744 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
+                    </a>
+                    <b class="product-card-price">160 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                    </a>
+                    <b class="product-card-price">94 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
+                    </a>
+                    <b class="product-card-price">173 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
+                    </a>
+                    <b class="product-card-price">441 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="#">
+                        <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
+                    </a>
+                    <b class="product-card-price">904 ₽</b>
+                    <a class="button product-card-button" href="#">Купить</a>
+                </li>
+            </ul>
+
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-prev pagination-disabled" href="#">
+                        <span class="visually-hidden">Предыдущая страница</span>
+                    </a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-current" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">5</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-next" href="#">
+                        <span class="visually-hidden">Следующая страница</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="button pagination-more" type="button">Показать  ещё</button>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+
+        <section class="footer-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <img class="footer-contacts-logo" src="#" alt="Логотип барбершопа">
+            <address class="footer-address">
+                <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="footer-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            </address>
+            <a class="footer-contacts-map" href="#">Как нас найти?</a>
+        </section>
+
+        <section class="footer-newsletter">
+            <h2 class="page-footer-title">Получайте лучшие предложения</h2>
+
+            <form class="footer-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="newsletter-email">
+                    <label class="visually-hidden" for="newsletter-email">Email</label>
+                    <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="email@htmlacademy.ru" required>
+                </div>
+                <button class="button newsletter-button" type="submit">
+                    <span class="visually-hidden">Отправить</span>
+                </button>
+            </form>
+        </section>
+
+        <section class="footer-social">
+            <h2 class="page-footer-title">Давайте дружить</h2>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Твиттер</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-social-text">
+                Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
